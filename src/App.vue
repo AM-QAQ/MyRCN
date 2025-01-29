@@ -82,16 +82,16 @@ const applyTheme = (dark) => {
   /* 亮色主题变量 */
   --bg-primary: #f8f9fa;
   --bg-secondary: #ffffff;
-  --bg-hover: rgba(99, 107, 251, 0.05);
-  --bg-active: rgba(99, 107, 251, 0.1);
+  --bg-hover: rgba(99, 107, 251, 0.08);
+  --bg-active: rgba(99, 107, 251, 0.15);
   --text-primary: #2c3e50;
-  --text-secondary: #6c757d;
-  --border-color: #e9ecef;
-  --accent-color: #636bfb;
-  --accent-hover: #4a51e8;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --menu-hover: rgba(99, 107, 251, 0.05);
-  --menu-active: rgba(99, 107, 251, 0.1);
+  --text-secondary: #5a6a7e;
+  --border-color: #c5ccd6;
+  --accent-color: #4a51e8;
+  --accent-hover: #3a41d8;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --menu-hover: rgba(99, 107, 251, 0.08);
+  --menu-active: rgba(99, 107, 251, 0.15);
 }
 
 .app-container {
@@ -123,8 +123,8 @@ const applyTheme = (dark) => {
   top: 0;
   z-index: 50;
   transition: all 0.3s ease;
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 4px 12px -4px var(--shadow-color);
+  border-bottom: 1.5px solid var(--border-color);
+  box-shadow: 0 4px 16px -4px var(--shadow-color);
   backdrop-filter: blur(8px);
 }
 
@@ -151,10 +151,10 @@ const applyTheme = (dark) => {
   border-radius: 12px;
   padding: 2rem;
   min-height: calc(100vh - 60px - 4rem);
-  box-shadow: 0 8px 16px var(--shadow-color);
+  box-shadow: 0 8px 24px var(--shadow-color);
   width: 100%;
   max-width: 800px;
-  border: 1px solid var(--border-color);
+  border: 1.5px solid var(--border-color);
 }
 
 /* 移动端适配 */

@@ -7,7 +7,7 @@
 .tabs {
     display: flex;
     gap: 1rem;
-    border-bottom: 2px solid #2f2f3d;
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 0.5rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -119,16 +119,17 @@
 }
 
 .faq-item {
-    background-color: rgba(99, 107, 251, 0.05);
-    border-radius: 8px;
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
+    border-radius: 12px;
     padding: 1.5rem;
-    border: 1px solid rgba(99, 107, 251, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .faq-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
 }
 
 .faq-question {
@@ -171,16 +172,17 @@
 }
 
 .step-card {
-    background: linear-gradient(145deg, rgba(99, 107, 251, 0.05), rgba(99, 107, 251, 0.02));
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
     border-radius: 12px;
     padding: 1.5rem;
-    border: 1px solid rgba(99, 107, 251, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .step-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
 }
 
 .step-header {
@@ -240,16 +242,17 @@
 }
 
 .method-card {
-    background: linear-gradient(145deg, rgba(99, 107, 251, 0.05), rgba(99, 107, 251, 0.02));
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
     border-radius: 12px;
     padding: 2rem;
-    border: 1px solid rgba(99, 107, 251, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .method-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
 }
 
 .method-header {
@@ -347,16 +350,17 @@
 }
 
 .feedback-card {
-    background: linear-gradient(145deg, rgba(99, 107, 251, 0.05), rgba(99, 107, 251, 0.02));
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
     border-radius: 12px;
     padding: 2rem;
-    border: 1px solid rgba(99, 107, 251, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .feedback-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
 }
 
 .group-info {

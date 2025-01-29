@@ -84,21 +84,24 @@ onMounted(() => {
 
 <style scoped>
 .stats-card {
-  background: linear-gradient(145deg, rgba(99, 107, 251, 0.05), rgba(99, 107, 251, 0.02));
+  background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
   border-radius: 12px;
-  border: 1px solid rgba(99, 107, 251, 0.1);
+  padding: 1.5rem;
+  border: 1.5px solid var(--border-color);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .stats-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+  box-shadow: 0 8px 24px var(--shadow-color);
+  border-color: var(--accent-color);
 }
 
 .card-header {
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid rgba(99, 107, 251, 0.1);
+  border-bottom: 1.5px solid var(--border-color);
+  background: linear-gradient(145deg, rgba(99, 107, 251, 0.05), rgba(99, 107, 251, 0.02));
 }
 
 .card-header h3 {
@@ -110,6 +113,7 @@ onMounted(() => {
 
 .card-content {
   padding: 1.5rem;
+  background-color: var(--bg-secondary);
 }
 
 .info-item {
