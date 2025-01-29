@@ -36,13 +36,13 @@ const menuItems = [
     <aside :class="['sidebar', { 'collapsed': isCollapsed }]">
       <div class="sidebar-header">
         <a 
-          href="https://github.com/AM-QAQ/MyRW" 
+          href="https://github.com/AM-QAQ/MyRCN" 
           target="_blank" 
           class="logo" 
           v-show="!isCollapsed"
         >
           <img src="@/assets/img/AMt.ico" alt="Logo" class="logo-img">
-          <span class="logo-text">MyRW</span>
+          <span class="logo-text">MyRCN</span>
         </a>
         <button class="toggle-btn" @click="toggleSidebar">
           <span class="toggle-icon">{{ isCollapsed ? '☰' : '×' }}</span>
