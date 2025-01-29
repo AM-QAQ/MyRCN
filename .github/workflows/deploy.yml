@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # 改为master，因为这是您的默认分支名
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 添加写入权限
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # 更新到v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4  # 更新到v4
+        with:
+          node-version: '18'
+          cache: 'npm'  # 添加缓存
+
+      - name: Install dependencies
+        run: npm ci  # 使用 ci 而不是 install，更适合CI环境
+
+      - name: Build
+        run: npm run build
+
+      - name: Create CNAME file
+        run: echo "www.rcn-pro.top" > dist/CNAME
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: www.rcn-pro.top
+          force_orphan: true  # 强制创建新的gh-pages分支
