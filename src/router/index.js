@@ -12,7 +12,7 @@ const router = createRouter({
       name: 'Pro',
       component: () => import('@/views/ProView.vue'),
       meta: {
-        title: 'MyRcn - Pro教程'
+        title: 'RCN新手教程'
       }
     },
     {
