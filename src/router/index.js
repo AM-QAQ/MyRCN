@@ -5,14 +5,17 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/pro'
+      redirect: '/pro',
+      meta: {
+        title: 'RCN新手教程'
+      }
     },
     {
       path: '/pro',
       name: 'Pro',
       component: () => import('@/views/ProView.vue'),
       meta: {
-        title: 'RCN新手教程'
+        title: 'MyRcn - Pro教程'
       }
     },
     {
