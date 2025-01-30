@@ -78,11 +78,12 @@ onUnmounted(() => {
                             <div class="step-title">充值服务</div>
                         </div>
                         <div class="step-content">
-                            <p>在左侧菜单栏选择<span class="highlight">服务->钱包->自助充值</span>，根据需要购买的套餐充值对应的金额：
+                            <p>在左侧菜单栏选择<span class="highlight">服务->钱包->自助充值</span>，根据需要购买的套餐充值对应的金额：</p>
+                            <ul class="price-list">
                                 <li>0.5r - 天</li>
                                 <li>6r - 月</li>
                                 <li>46r - 年</li>
-                            </p>
+                            </ul>
                             <div class="img-container">
                                 <img src="@/assets/img/pro/buying-8.png" alt="buying-加载失败">
                             </div>

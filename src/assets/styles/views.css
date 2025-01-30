@@ -428,3 +428,27 @@
 .value {
     color: var(--text-primary);
 }
+
+.price-list {
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.price-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.price-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.price-list li:last-child {
+    margin-bottom: 0;
+}
