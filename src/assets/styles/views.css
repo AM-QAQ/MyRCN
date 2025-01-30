@@ -452,3 +452,89 @@
 .price-list li:last-child {
     margin-bottom: 0;
 }
+
+/* 下载部分样式 */
+.download-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.download-card {
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.version-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.file-info {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-hover);
+    color: var(--accent-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent-color);
+}
+
+.download-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.2);
+}
+
+.download-btn.primary {
+    background: var(--accent-color);
+    color: white;
+}
+
+.download-btn.primary:hover {
+    background: var(--accent-hover);
+}
+
+/* 移动端适配下载按钮 */
+@media (max-width: 768px) {
+    .download-card {
+        padding: 1rem;
+    }
+
+    .version-title {
+        font-size: 1.1rem;
+    }
+
+    .download-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
