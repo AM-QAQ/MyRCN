@@ -52,12 +52,8 @@ onUnmounted(() => {
 <template>
   <div class="pro-view">
     <div class="tabs">
-      <button
-        v-for="tab in tabs"
-        :key="tab.id"
-        :class="['tab-btn', { active: activeTab === tab.label }]"
-        @click="activeTab = tab.label"
-      >
+      <button v-for="tab in tabs" :key="tab.id" :class="['tab-btn', { active: activeTab === tab.label }]"
+        @click="activeTab = tab.label">
         {{ tab.label }}
       </button>
     </div>
@@ -68,11 +64,8 @@ onUnmounted(() => {
           <div class="download-card">
             <div class="version-title">1.15 - 官方版</div>
             <div class="download-content">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.corrodinggames.rts&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                target="_blank"
-                class="download-btn primary"
-              >
+              <a href="https://play.google.com/store/apps/details?id=com.corrodinggames.rts&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                target="_blank" class="download-btn primary">
                 前往下载
               </a>
             </div>
@@ -119,11 +112,8 @@ onUnmounted(() => {
           <div class="download-card">
             <div class="version-title">1.15 - 官方版</div>
             <div class="download-content">
-              <a
-                href="https://apps.apple.com/au/app/rusted-warfare-rts/id1514329124"
-                target="_blank"
-                class="download-btn primary"
-              >
+              <a href="https://apps.apple.com/au/app/rusted-warfare-rts/id1514329124" target="_blank"
+                class="download-btn primary">
                 前往下载
               </a>
             </div>
@@ -150,11 +140,8 @@ onUnmounted(() => {
           <div class="download-card">
             <div class="version-title">1.15 - 官方版</div>
             <div class="download-content">
-              <a
-                href="https://store.steampowered.com/app/647960/Rusted_Warfare__RTS/"
-                target="_blank"
-                class="download-btn primary"
-              >
+              <a href="https://store.steampowered.com/app/647960/Rusted_Warfare__RTS/" target="_blank"
+                class="download-btn primary">
                 前往下载
               </a>
             </div>
@@ -163,11 +150,7 @@ onUnmounted(() => {
           <div class="download-card">
             <div class="version-title">1.15 - RWPP</div>
             <div class="download-content">
-              <a
-                href="https://github.com/Minxyzgo/RWPP/releases"
-                target="_blank"
-                class="download-btn primary"
-              >
+              <a href="https://github.com/Minxyzgo/RWPP/releases" target="_blank" class="download-btn primary">
                 前往下载
               </a>
             </div>
@@ -182,7 +165,7 @@ onUnmounted(() => {
               </button>
             </div>
           </div>
-          
+
           <div class="download-card">
             <div class="version-title">敬请期待...</div>
           </div>
@@ -194,12 +177,8 @@ onUnmounted(() => {
           <div class="feedback-card">
             <div class="group-info">
               <div class="group-title">网站邮箱反馈</div>
-              <a
-                href="mailto:k26373165@gmail.com?subject=网站反馈&body=请在此处输入您的反馈内容..."
-                target="_blank"
-                class="group-number"
-                title="点击发送邮件"
-              >
+              <a href="mailto:k26373165@gmail.com?subject=网站反馈&body=请在此处输入您的反馈内容..." target="_blank"
+                class="group-number" title="点击发送邮件">
                 k26373165@gmail.com
               </a>
             </div>
@@ -209,12 +188,7 @@ onUnmounted(() => {
     </div>
 
     <!-- 返回顶部按钮 -->
-    <button
-      v-show="showBackTop"
-      class="back-to-top"
-      @click="scrollToTop"
-      title="返回顶部"
-    >
+    <button v-show="showBackTop" class="back-to-top" @click="scrollToTop" title="返回顶部">
       ↑
     </button>
 
@@ -226,7 +200,7 @@ onUnmounted(() => {
           <ul>
             <li>本站安装包均来自于互联网，仅供学习交流使用</li>
             <li>所有资源请在下载后24小时内删除。</li>
-            <li>如需游玩请前往 
+            <li>如需游玩请前往
               <a href="https://corrodinggames.com/rusted_warfare" target="_blank">
                 铁锈战争官网
               </a>
@@ -355,6 +329,7 @@ onUnmounted(() => {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -365,6 +340,7 @@ onUnmounted(() => {
     transform: translateY(-20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;

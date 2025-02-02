@@ -63,11 +63,8 @@ onMounted(() => {
           <div class="feedback-card">
             <div class="group-info">
               <div class="group-title">网站邮箱反馈</div>
-              <a href="mailto:k26373165@gmail.com?subject=网站反馈&body=请在此处输入您的反馈内容..."
-                target="_blank" 
-                class="group-number"
-                title="点击发送邮件"
-              >
+              <a href="mailto:k26373165@gmail.com?subject=网站反馈&body=请在此处输入您的反馈内容..." target="_blank"
+                class="group-number" title="点击发送邮件">
                 k26373165@gmail.com
               </a>
             </div>
