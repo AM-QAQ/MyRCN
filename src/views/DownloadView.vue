@@ -82,7 +82,7 @@ onUnmounted(() => {
             <div class="version-title">1.15 - 原版</div>
             <div class="download-content">
               <div class="file-info">文件大小：24.3 MB</div>
-              <button class="download-btn" @click="handleDownload('https://www.123865.com/s/s62sjv-g0MH')">
+              <button class="download-btn" @click="handleDownload('https://api.hanximeng.com/lanzou/?url=https://amt.lanzoul.com/ideZG2mhnapa&type=down&pwd=foj4')">
                 立即下载
               </button>
             </div>
@@ -92,7 +92,7 @@ onUnmounted(() => {
             <div class="version-title">1.15 - 汉化版</div>
             <div class="download-content">
               <div class="file-info">文件大小：26.7 MB</div>
-              <button class="download-btn" @click="handleDownload('https://www.123865.com/s/s62sjv-w0MH')">
+              <button class="download-btn" @click="handleDownload('https://api.hanximeng.com/lanzou/?url=https://amt.lanzoul.com/izwt82mhnawh&type=down&pwd=gxmo')">
                 立即下载
               </button>
             </div>
@@ -102,7 +102,7 @@ onUnmounted(() => {
             <div class="version-title">1.15 - 指令版</div>
             <div class="download-content">
               <div class="file-info">文件大小：26.9 MB</div>
-              <button class="download-btn" @click="handleDownload('https://www.123865.com/s/s62sjv-M0MH')">
+              <button class="download-btn" @click="handleDownload('https://api.hanximeng.com/lanzou/?url=https://amt.lanzoul.com/iHQAb2mhnb4f&type=down&pwd=7gsk')">
                 立即下载
               </button>
             </div>
@@ -133,7 +133,7 @@ onUnmounted(() => {
             <div class="version-title">1.15 - 原版</div>
             <div class="download-content">
               <div class="file-info">文件大小：91.5 MB</div>
-              <button class="download-btn" @click="handleDownload('https://www.123865.com/s/s62sjv-I0MH')">
+              <button class="download-btn" @click="handleDownload('https://api.hanximeng.com/lanzou/?url=https://amt.lanzoul.com/i8h962mhnbne&type=down&pwd=fqhn')">
                 立即下载
               </button>
             </div>
