@@ -4,10 +4,10 @@ MyRCN 是一个基于 Vue 3 和 Vite 构建的现代化网站，为 Rusted Warfa
 
 ## 🌟 功能特性
 
-- 🚀 **Pro教程**：提供高级游戏策略和技巧指导
-- 🎮 **游戏教程**：详细的游戏玩法和机制说明
+- 🚀 **Pro教程**： 提供Pro购买教程，帮助玩家快速启动S房
+- 🎮 **游戏教程**：详细的游戏基础教程
 - ⬇️ **游戏下载**：提供多个版本的游戏下载，包括官方版、汉化版等
-- 📊 **数据统计**：展示网站运行数据和访问统计
+- 📊 **数据统计**：展示网站运行数据
 
 ## 🛠️ 技术栈
 
@@ -81,11 +81,31 @@ npm run build
 
 ## 🤝 贡献指南
 
-1. Fork 本仓库
-2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的改动 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
+如果你想为 MyRCN 项目做出贡献，我们非常欢迎！以下是贡献步骤：
+
+1. 访问项目地址：[MyRCN](https://github.com/AM-QAQ/MyRCN)
+2. 点击 "Fork" 按钮创建项目的分支到你的 GitHub 账号
+3. 将你的 Fork 克隆到本地：
+   ```bash
+   git clone https://github.com/你的用户名/MyRCN.git
+   cd MyRCN
+   ```
+4. 创建新的分支进行开发：
+   ```bash
+   git checkout -b feature/你的功能名称
+   ```
+5. 进行代码修改并提交：
+   ```bash
+   git add .
+   git commit -m "feat: 添加了某个功能"
+   git push origin feature/你的功能名称
+   ```
+6. 在 GitHub 上打开 [MyRCN](https://github.com/AM-QAQ/MyRCN) 项目
+7. 点击 "Pull Request" 按钮，创建一个新的 Pull Request
+8. 选择你的分支，并描述你所做的修改
+9. 提交 Pull Request 等待审核
+
+我们会尽快审核你的贡献并给出反馈。感谢你的支持！
 
 ## 📝 开发日志
 
