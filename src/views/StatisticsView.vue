@@ -25,10 +25,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import "@/assets/styles/img.css"
-import "@/assets/styles/views.css"
-import "@/assets/styles/stats.css"
-
 import "@/assets/styles/parentView.css";
 import "@/assets/styles/backToTop.css";
 

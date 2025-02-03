@@ -23,7 +23,6 @@
 
 <script setup>
 import "@/assets/styles/childView.css";
-import "@/assets/styles/img.css"
 
 </script>
 

@@ -111,7 +111,6 @@
 <script setup>
 import "@/assets/styles/cmd.css";
 import "@/assets/styles/childView.css";
-import "@/assets/styles/img.css"
 
 </script>
 

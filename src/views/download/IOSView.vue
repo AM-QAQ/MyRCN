@@ -28,7 +28,6 @@
 
 <script setup>
 import "@/assets/styles/childView.css";
-import "@/assets/styles/img.css"
 import "@/assets/styles/download.css";
 import "@/assets/styles/dialogBox.css";
 
