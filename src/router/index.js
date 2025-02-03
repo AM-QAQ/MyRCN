@@ -15,7 +15,7 @@ const router = createRouter({
       name: 'Pro',
       component: () => import('@/views/ProView.vue'),
       meta: {
-        title: 'MyRcn - Pro教程'
+        title: 'MyRCN - Pro教程'
       }
     },
     {
@@ -23,7 +23,7 @@ const router = createRouter({
       name: 'Game',
       component: () => import('@/views/GameView.vue'),
       meta: {
-        title: 'MyRcn - 游戏教程'
+        title: 'MyRCN - 游戏教程'
       }
     },
     {
@@ -31,7 +31,7 @@ const router = createRouter({
       name: 'Download',
       component: () => import('@/views/DownloadView.vue'),
       meta: {
-        title: 'MyRcn - 游戏下载'
+        title: 'MyRCN - 游戏下载'
       }
     },
     {
@@ -39,7 +39,7 @@ const router = createRouter({
       name: 'Statistics',
       component: () => import('@/views/StatisticsView.vue'),
       meta: {
-        title: 'MyRcn - 数据统计'
+        title: 'MyRCN - 数据统计'
       }
     }
   ]
@@ -48,7 +48,7 @@ const router = createRouter({
 // 全局前置守卫：在路由切换前修改页面标题
 router.beforeEach((to, from, next) => {
   // 设置页面标题
-  document.title = to.meta.title || 'MyRcn'
+  document.title = to.meta.title || 'MyRCN'
   next()
 })
 
