@@ -1,0 +1,359 @@
+.purchase-guide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.step-number {
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.step-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.step-content {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.highlight-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.highlight-link:hover {
+    text-decoration: underline;
+}
+
+.warning-text {
+    color: var(--warning-color);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.price-list li {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* PurchaseView 样式 */
+.purchase-guide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step-card {
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #636bfb;
+    background: rgba(99, 107, 251, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.step-content {
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #636bfb;
+    font-weight: 500;
+}
+
+.highlight-link {
+    color: #636bfb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+    color: #8389ff;
+}
+
+.warning-text {
+    color: #ff6b6b;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+/* FAQ 部分样式 */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-item {
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.faq-question {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #636bfb;
+    font-weight: 500;
+}
+
+.question-number {
+    background-color: #636bfb;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.question-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.faq-answer {
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding-left: calc(2rem + 1.5rem);
+}
+
+.faq-answer .img-container {
+    margin: 1rem 0;
+}
+
+/* 使用部分样式 */
+.usage-guide {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.method-card {
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.method-header {
+    margin-bottom: 2rem;
+}
+
+.method-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+.method-badge {
+    background: #636bfb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.recommend-badge {
+    background: #ff6b6b;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.method-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.usage-step {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    padding-left: 2.5rem;
+    color: var(--text-primary);
+}
+
+.step-marker {
+    position: absolute;
+    left: 0;
+    background: rgba(99, 107, 251, 0.1);
+    color: #636bfb;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.usage-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    color: var(--text-primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usage-note:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+}
+
+.note-icon {
+    font-size: 1.25rem;
+}
+
+/* 反馈部分样式 */
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-card {
+    background: linear-gradient(145deg, rgba(99, 107, 251, 0.08), rgba(99, 107, 251, 0.05));
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1.5px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.group-info {
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.group-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #636bfb;
+}
+
+.group-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(99, 107, 251, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.group-number:hover {
+    background: rgba(99, 107, 251, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 107, 251, 0.1);
+}

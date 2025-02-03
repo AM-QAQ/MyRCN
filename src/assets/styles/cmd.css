@@ -1,0 +1,51 @@
+.command-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .command-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: rgba(99, 107, 251, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .command-item:hover {
+    background-color: rgba(99, 107, 251, 0.1);
+    transform: translateX(4px);
+  }
+  
+  .command {
+    color: var(--accent-color);
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 140px;
+  }
+  
+  .description {
+    color: var(--text-primary);
+  }
+  
+  .waiting {
+    color: var(--text-secondary);
+    font-style: italic;
+    justify-content: center;
+  }
+  
+  /* 移动端适配 */
+  @media (max-width: 768px) {
+    .command-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .command {
+      min-width: auto;
+    }
+  }
