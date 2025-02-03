@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # 改为master，因为这是您的默认分支名
+      - master  # 改为master
 
 jobs:
   deploy:
@@ -13,16 +13,16 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # 更新到v4 
+        uses: actions/checkout@v4     # 更新到v4 
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4  # 更新到v4
+        uses: actions/setup-node@v4   # 更新到v4
         with:
           node-version: '18'
           cache: 'npm'  # 添加缓存
 
       - name: Install dependencies
-        run: npm ci  # 使用 ci 而不是 install，更适合CI环境
+        run: npm ci     # 使用 ci 而不是 install，更适合CI环境
 
       - name: Build
         run: npm run build
