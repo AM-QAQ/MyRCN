@@ -12,10 +12,10 @@ jobs:
       contents: write  # 添加写入权限
     
     steps:
-      - name: Checkout repository
+      - name: 访问存储库
         uses: actions/checkout@v4     # 更新到v4 
 
-      - name: Setup Node.js
+      - name: 安装nodejs
         uses: actions/setup-node@v4   # 更新到v4
         with:
           node-version: '22'
@@ -27,10 +27,22 @@ jobs:
       - name: 打包项目
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: 部署到gh-pages分支
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: www.rcn-pro.top
           force_orphan: true  # 强制创建新的gh-pages分支
+
+      - name: 登录DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+  
+      - name: 构建并推送到DockerHub
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: aming001/myrcn:latest
