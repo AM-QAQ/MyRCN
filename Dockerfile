@@ -6,6 +6,6 @@ COPY public/ /myrcn/public
 COPY src/ /myrcn/src
 COPY package.json /myrcn/package.json
 
-RUN npm ci
+RUN npm install
 
 CMD ["npm", "start"]
