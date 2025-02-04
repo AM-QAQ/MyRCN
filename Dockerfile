@@ -1,11 +1,19 @@
-FROM node:22-alpine
+FROM node:22-alpine AS builder
 
 WORKDIR /myrcn
 
-COPY public/ /myrcn/public
-COPY src/ /myrcn/src
-COPY package.json /myrcn/package.json
+COPY package*.json ./
 
 RUN npm install
 
-CMD ["npm", "start"]
+COPY . .
+
+RUN npm run build  
+
+FROM nginx:alpine
+
+COPY --from=builder /myrcn/dist /usr/share/nginx/html  
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
