@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: 打包并部署到GitHub Pages
 
 on:
   push:
     branches:
-      - master  # 改为master
+      - master  # 指定触发的分支
 
 jobs:
   deploy:
@@ -18,17 +18,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4   # 更新到v4
         with:
-          node-version: '18'
+          node-version: '22'
           cache: 'npm'  # 添加缓存
 
-      - name: Install dependencies
+      - name: 安装依赖
         run: npm ci     # 使用 ci 而不是 install，更适合CI环境
 
-      - name: Build
+      - name: 打包项目
         run: npm run build
-
-      - name: Create CNAME file
-        run: echo "www.rcn-pro.top" > dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
